@@ -510,15 +510,25 @@ body{
   color: #919191;
   transform: scale(80%);
   padding-right: 10px;
+  transition: color 0.3s ease;
 }
 
-.inputstxt input:focus~label, .inputstxt input:valid~label{
+.inputstxt input:focus~label, .inputstxt input:not(:placeholder-shown)~label{
   top: 0;
   background-color: #eee;
   font-size: 0.7rem;
   border-radius: 5px;
 }
 
-.inputstxt input:valid~i{
-  fill: black;
+.inputstxt span i{
+  color: #919191;
+  position: absolute;
+  right: 10px;
+  top: 38%;
+  transform: translateY(-50%);
+  transform: scale(150%);
+  cursor: pointer;
+  user-select: none;
+  background-color: #eee;
+  padding-left: 3px;
 }
