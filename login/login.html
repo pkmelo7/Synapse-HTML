@@ -61,25 +61,28 @@
                 <span>ou use seu e-mail para cadastro</span>
                 <div class="inputstxt">
                     <i class="fa-solid fa-address-card"></i>
-                    <input required type="text" id="nome">
+                    <input required type="text" id="txtNome" placeholder="">
                     <label for="nome">Nome</label>
                 </div>
                 <div class="inputstxt">
                     <i class="fa-solid fa-user"></i>
-                    <input required type="text" id="usuario">
+                    <input required type="text" id="txtUsuario" placeholder="">
                     <label for="usuario">Usuario</label>
                 </div>
                 <div class="inputstxt">
                     <i class="fa-solid fa-at"></i>
-                    <input required type="email" id="email">
+                    <input required type="email" id="txtEmail" placeholder="">
                     <label for="email">E-mail</label>
                 </div>
                 <div class="inputstxt">
                     <i class="fa-solid fa-key"></i>
-                    <input required type="password" id="senha">
+                    <input required type="password" id="txtSenhaUp" placeholder="">
                     <label for="senha">Senha</label>
+                    <span>
+                        <i class="fa-regular fa-eye" id="tpEyeUp"></i>
+                    </span>
                 </div>
-                <button>Registre-se</button>
+                <button onclick="cadastrarUsuario()">Registre-se</button>
             </form>
         </div>
 
@@ -95,13 +98,16 @@
                 <span>ou use seu e-mail e senha</span>
                 <div class="inputstxt">
                     <i class="fa-solid fa-at"></i>
-                    <input required type="email" id="email">
+                    <input required type="email" id="txtEmail" placeholder="">
                     <label for="email">E-mail</label>
                 </div>
                 <div class="inputstxt">
                     <i class="fa-solid fa-key"></i>
-                    <input required type="password" id="senha">
+                    <input required type="password" id="txtSenhaIn" placeholder="">
                     <label for="senha">Senha</label>
+                    <span>
+                        <i class="fa-regular fa-eye" id="tpEyeIn"></i>
+                    </span>
                 </div>
                 <a href="#">Esqueceu sua senha?</a>
                 <button>Entrar</button>
